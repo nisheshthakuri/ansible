@@ -1,0 +1,6 @@
+---
+# Default variables for the MySQL role
+mysql_root_password: rootpassword
+mysql_db_name: mydatabase
+mysql_db_user: myuser
+mysql_db_password: mypassword

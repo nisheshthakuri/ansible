@@ -41,36 +41,4 @@
         name: nginx
         state: reloaded
 
-# -
-#   name: nginx
-#   hosts: servers
-#   become: yes
-#   tasks:
-#     - name: Install Nginx
-#       ansible.builtin.package:
-#         name: nginx
-#         state: present
 
-#     - name: Ensure Nginx is running
-#       ansible.builtin.service:
-#         name: nginx
-#         state: started
-#         enabled: yes
-
-#     - name: Deploy index.html
-#       ansible.builtin.copy:
-#         src: index.html
-#         dest: /var/www/html/index.html
-
-#conf file
-
-
-# server {
-#     listen 80;
-#     server_name localhost;
-#     root /var/www/html;
-#     index index.html;
-#     location / {
-#         try_files $uri $uri/ =404;
-#     }
-# }
